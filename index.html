@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read — Digital Bookshelf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f9f9f7;
+    --card:#fcfcfb;
+    --ink:#0b0b0b;
+    --ink-2:#52514e;
+    --ink-3:#898781;
+    --accent:#2a78d6;
+    --accent-soft:rgba(42,120,214,0.12);
+    --accent-soft-2:rgba(42,120,214,0.22);
+    --grid-minor:#e1e0d9;
+    --grid-axis:#c3c2b7;
+    --cell-off:#eeede8;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:48px 28px 96px;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    margin-bottom:36px;
+    border-bottom:1px solid var(--grid-minor);
+    padding-bottom:28px;
+  }
+  h1{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:-0.01em;
+    margin:0 0 6px;
+  }
+  .subtitle{
+    color:var(--ink-2);
+    font-size:13px;
+    margin:0 0 24px;
+  }
+  .stats{
+    display:flex;
+    gap:0;
+    flex-wrap:wrap;
+    border:1px solid var(--grid-minor);
+    background:var(--card);
+    border-radius:6px;
+    overflow:hidden;
+  }
+  .stat{
+    padding:12px 20px;
+    border-right:1px solid var(--grid-minor);
+    min-width:110px;
+  }
+  .stat:last-child{border-right:none;}
+  .stat .num{
+    font-size:20px;
+    font-weight:700;
+    font-variant-numeric:tabular-nums;
+    color:var(--ink);
+  }
+  .stat .label{
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--ink-3);
+    margin-top:2px;
+  }
+
+  /* ---------- Legend ---------- */
+  .legend{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px 22px;
+    margin-top:20px;
+    font-size:12px;
+    color:var(--ink-2);
+  }
+  .legend .dim{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    white-space:nowrap;
+  }
+  .legend .emoji{font-size:13px;}
+  .legend-swatches{
+    display:flex;
+    gap:18px;
+    margin-top:14px;
+    font-size:12px;
+    color:var(--ink-2);
+  }
+  .swatch{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+  }
+  .swatch .box{
+    width:12px;height:12px;border-radius:3px;
+    border:1px solid var(--grid-axis);
+  }
+  .swatch .box.on{background:var(--accent);border-color:var(--accent);}
+  .swatch .box.off{background:var(--cell-off);}
+
+  /* ---------- View toggle ---------- */
+  .view-toggle{
+    display:flex;
+    gap:0;
+    margin:0 0 32px;
+    border:1px solid var(--grid-minor);
+    border-radius:6px;
+    width:fit-content;
+    overflow:hidden;
+  }
+  .view-toggle button{
+    font-family:inherit;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.02em;
+    color:var(--ink-2);
+    background:var(--card);
+    border:none;
+    padding:8px 16px;
+    cursor:pointer;
+    border-right:1px solid var(--grid-minor);
+  }
+  .view-toggle button:last-child{border-right:none;}
+  .view-toggle button.active{
+    background:var(--accent);
+    color:#fff;
+  }
+
+  /* ---------- Shelves ---------- */
+  .shelf{
+    margin-bottom:40px;
+  }
+  .shelf-head{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    margin-bottom:12px;
+  }
+  .shelf-head .tier{
+    font-size:14px;
+    font-weight:700;
+  }
+  .shelf-head .count{
+    font-size:11.5px;
+    color:var(--ink-3);
+  }
+  .shelf-head .bar{
+    flex:1;
+    height:1px;
+    background:var(--grid-minor);
+  }
+  .shelf-row{
+    display:flex;
+    align-items:flex-start;
+    gap:2px;
+    overflow-x:auto;
+    padding-bottom:8px;
+  }
+  .row-labels{
+    display:grid;
+    grid-template-rows:repeat(7, 30px);
+    flex:0 0 auto;
+    margin-right:6px;
+  }
+  .row-labels div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+    height:30px;
+    color:var(--ink-3);
+  }
+  .spine{
+    position:relative;
+    flex:0 0 auto;
+    width:30px;
+    cursor:pointer;
+  }
+  .spine .cells{
+    display:grid;
+    grid-template-rows:repeat(7, 30px);
+    gap:2px;
+    background:var(--bg);
+  }
+  .cell{
+    background:var(--cell-off);
+    transition:background 120ms ease, transform 120ms ease;
+  }
+  .cell.on{background:var(--accent);}
+  .spine .cells{border-radius:4px;overflow:hidden;}
+  .spine-title{
+    position:absolute;
+    top:2px; bottom:2px; left:0; right:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    pointer-events:none;
+  }
+  .spine-title span{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.01em;
+    color:var(--ink);
+    white-space:nowrap;
+    max-height:100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-shadow:
+      -1px -1px 0 var(--bg), 1px -1px 0 var(--bg),
+      -1px 1px 0 var(--bg), 1px 1px 0 var(--bg),
+      0 0 5px var(--bg), 0 0 5px var(--bg);
+  }
+  .spine:hover .cells{outline:2px solid var(--ink); outline-offset:1px;}
+  .spine:hover{transform:translateY(-2px);}
+
+  /* ---------- Tooltip ---------- */
+  #tooltip{
+    position:fixed;
+    pointer-events:none;
+    background:var(--ink);
+    color:#fff;
+    font-size:11.5px;
+    line-height:1.45;
+    padding:10px 12px;
+    border-radius:6px;
+    max-width:260px;
+    opacity:0;
+    transform:translateY(4px);
+    transition:opacity 120ms ease, transform 120ms ease;
+    z-index:50;
+    box-shadow:0 6px 20px rgba(0,0,0,0.18);
+  }
+  #tooltip.show{opacity:1;transform:translateY(0);}
+  #tooltip .t-title{font-weight:700;margin-bottom:2px;}
+  #tooltip .t-author{color:#c3c2b7;margin-bottom:6px;}
+  #tooltip .t-dims{color:#e1e0d9;}
+  #tooltip .t-notes{margin-top:6px;color:#c3c2b7;font-style:italic;}
+
+  /* ---------- Table view ---------- */
+  #table-view{display:none;}
+  .data-table{
+    width:100%;
+    min-width:660px;
+    border-collapse:collapse;
+    font-size:12px;
+  }
+  .data-table th, .data-table td{
+    text-align:left;
+    padding:8px 10px;
+    border-bottom:1px solid var(--grid-minor);
+    white-space:nowrap;
+  }
+  .data-table th{
+    color:var(--ink-3);
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    font-weight:600;
+    position:sticky;
+    top:0;
+    background:var(--bg);
+  }
+  .data-table td.num{font-variant-numeric:tabular-nums;}
+  .data-table .dim-cell{text-align:center;}
+  .data-table tbody tr:hover{background:var(--accent-soft);}
+  .table-scroll{
+    overflow-x:auto;
+    border:1px solid var(--grid-minor);
+    border-radius:6px;
+    background:var(--card);
+  }
+  .table-title{color:var(--ink-2);max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+  footer{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--grid-minor);
+    color:var(--ink-3);
+    font-size:11px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .spine, .cell, #tooltip{transition:none;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Read</h1>
+    <p class="subtitle">A digital bookshelf of finished books, shelved by rating. Each spine is a book; each cell is a criterion.</p>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="legend" id="dim-legend"></div>
+    <div class="legend-swatches">
+      <span class="swatch"><span class="box on"></span>criterion met</span>
+      <span class="swatch"><span class="box off"></span>criterion not met</span>
+    </div>
+  </header>
+
+  <div class="view-toggle">
+    <button id="btn-shelf" class="active">Shelf view</button>
+    <button id="btn-table">Table view</button>
+  </div>
+
+  <div id="shelf-view"></div>
+
+  <div id="table-view">
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th class="dim-cell">Rating</th>
+            <th id="table-dim-headers"></th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>Source data: <code>data/books.json</code></footer>
+</div>
+
+<div id="tooltip"></div>
+
+<script>
+async function main(){
+  const res = await fetch('data/books.json');
+  const data = await res.json();
+  const dims = data.meta.dimensions;
+  const books = data.books;
+
+  // ---- Stats ----
+  const statsEl = document.getElementById('stats');
+  const total = books.length;
+  const avgRating = (books.reduce((s,b)=>s+b.rating,0)/total).toFixed(1);
+  const perfect = books.filter(b=>b.rating===8).length;
+  const dimAvg = dims.map(d=>{
+    const pct = Math.round(100*books.filter(b=>b.dims[d.key]===1).length/total);
+    return {d, pct};
+  }).sort((a,b)=>b.pct-a.pct)[0];
+  statsEl.innerHTML = `
+    <div class="stat"><div class="num">${total}</div><div class="label">books read</div></div>
+    <div class="stat"><div class="num">${avgRating}</div><div class="label">avg rating / 8</div></div>
+    <div class="stat"><div class="num">${perfect}</div><div class="label">perfect 8/8</div></div>
+    <div class="stat"><div class="num">${dimAvg.d.emoji} ${dimAvg.pct}%</div><div class="label">most common: ${dimAvg.d.label.toLowerCase()}</div></div>
+  `;
+
+  // ---- Legend ----
+  document.getElementById('dim-legend').innerHTML = dims.map(d =>
+    `<span class="dim"><span class="emoji">${d.emoji}</span>${d.label}</span>`
+  ).join('');
+
+  // ---- Shelf view ----
+  const shelfEl = document.getElementById('shelf-view');
+  const byTier = {};
+  books.forEach(b => { (byTier[b.rating] = byTier[b.rating] || []).push(b); });
+
+  for (let tier = 8; tier >= 1; tier--){
+    const shelfBooks = byTier[tier];
+    if (!shelfBooks || !shelfBooks.length) continue;
+    // sort alphabetically within shelf for stable browsing
+    shelfBooks.sort((a,b)=>a.title.localeCompare(b.title));
+
+    const shelf = document.createElement('div');
+    shelf.className = 'shelf';
+    shelf.innerHTML = `
+      <div class="shelf-head">
+        <span class="tier">Tier ${tier} <span style="color:var(--ink-3);font-weight:400;">(${tier}/8)</span></span>
+        <span class="count">${shelfBooks.length} book${shelfBooks.length===1?'':'s'}</span>
+        <span class="bar"></span>
+      </div>
+      <div class="shelf-row">
+        <div class="row-labels">${dims.map(d=>`<div title="${d.label}">${d.emoji}</div>`).join('')}</div>
+        <div class="spines" style="display:flex;gap:2px;"></div>
+      </div>
+    `;
+    const spinesEl = shelf.querySelector('.spines');
+    shelfBooks.forEach(b => {
+      const spine = document.createElement('div');
+      spine.className = 'spine';
+      const cellsHtml = dims.map(d => `<div class="cell ${b.dims[d.key]?'on':''}"></div>`).join('');
+      spine.innerHTML = `
+        <div class="cells">${cellsHtml}</div>
+        <div class="spine-title"><span>${b.title}</span></div>
+      `;
+      spine.addEventListener('mouseenter', (e)=>showTooltip(e, b, dims));
+      spine.addEventListener('mousemove', moveTooltip);
+      spine.addEventListener('mouseleave', hideTooltip);
+      spinesEl.appendChild(spine);
+    });
+    shelfEl.appendChild(shelf);
+  }
+
+  // ---- Table view ----
+  document.getElementById('table-dim-headers').outerHTML =
+    dims.map(d=>`<th class="dim-cell" title="${d.label}">${d.emoji}</th>`).join('');
+  const tbody = document.getElementById('table-body');
+  const allSorted = [...books].sort((a,b)=> b.rating - a.rating || a.title.localeCompare(b.title));
+  tbody.innerHTML = allSorted.map(b => `
+    <tr>
+      <td class="table-title" title="${b.title}">${b.title}</td>
+      <td class="table-title" style="max-width:160px;color:var(--ink-3);">${b.author}</td>
+      <td class="num dim-cell">${b.rating}</td>
+      ${dims.map(d=>`<td class="dim-cell">${b.dims[d.key]? '<span style=\"color:var(--accent);font-weight:700;\">&#9679;</span>' : '<span style=\"color:var(--grid-axis);\">&#9675;</span>'}</td>`).join('')}
+    </tr>
+  `).join('');
+
+  // ---- Tooltip ----
+  const tip = document.getElementById('tooltip');
+  function showTooltip(e, b, dims){
+    const metDims = dims.filter(d=>b.dims[d.key]).map(d=>d.emoji).join(' ');
+    tip.innerHTML = `
+      <div class="t-title">${b.title}</div>
+      <div class="t-author">${b.author}</div>
+      <div class="t-dims">${metDims || '—'} &nbsp;·&nbsp; ${b.rating}/8</div>
+      ${b.notes ? `<div class="t-notes">${b.notes}</div>` : ''}
+    `;
+    tip.classList.add('show');
+    moveTooltip(e);
+  }
+  function moveTooltip(e){
+    const pad = 16;
+    let x = e.clientX + pad;
+    let y = e.clientY + pad;
+    const rect = tip.getBoundingClientRect();
+    if (x + rect.width > window.innerWidth - 8) x = e.clientX - rect.width - pad;
+    if (y + rect.height > window.innerHeight - 8) y = e.clientY - rect.height - pad;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+  }
+  function hideTooltip(){ tip.classList.remove('show'); }
+
+  // ---- View toggle ----
+  const btnShelf = document.getElementById('btn-shelf');
+  const btnTable = document.getElementById('btn-table');
+  const shelfView = document.getElementById('shelf-view');
+  const tableView = document.getElementById('table-view');
+  btnShelf.addEventListener('click', ()=>{
+    btnShelf.classList.add('active'); btnTable.classList.remove('active');
+    shelfView.style.display='block'; tableView.style.display='none';
+  });
+  btnTable.addEventListener('click', ()=>{
+    btnTable.classList.add('active'); btnShelf.classList.remove('active');
+    tableView.style.display='block'; shelfView.style.display='none';
+  });
+}
+main();
+</script>
+</body>
+</html>

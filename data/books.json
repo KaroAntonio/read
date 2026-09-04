@@ -1,87 +1,1051 @@
 {
   "meta": {
     "dimensions": [
-      {"key": "expansion", "label": "Expansion", "emoji": "🔭"},
-      {"key": "pull", "label": "Pull", "emoji": "🧲"},
-      {"key": "afterglow", "label": "Afterglow", "emoji": "🕯️"},
-      {"key": "immersion", "label": "Immersion", "emoji": "🌊"},
-      {"key": "evocative", "label": "Evocative", "emoji": "🫀"},
-      {"key": "quality", "label": "Quality", "emoji": "💎"},
-      {"key": "rereadability", "label": "Rereadability", "emoji": "📖"}
+      {
+        "key": "expansion",
+        "label": "Expansion",
+        "emoji": "🔭"
+      },
+      {
+        "key": "pull",
+        "label": "Pull",
+        "emoji": "🧲"
+      },
+      {
+        "key": "afterglow",
+        "label": "Afterglow",
+        "emoji": "🕯️"
+      },
+      {
+        "key": "immersion",
+        "label": "Immersion",
+        "emoji": "🌊"
+      },
+      {
+        "key": "evocative",
+        "label": "Evocative",
+        "emoji": "🫀"
+      },
+      {
+        "key": "quality",
+        "label": "Quality",
+        "emoji": "💎"
+      },
+      {
+        "key": "rereadability",
+        "label": "Rereadability",
+        "emoji": "📖"
+      }
     ]
   },
   "books": [
-    {"title": "Shantaram", "author": "Gregory David Roberts", "notes": "", "rating": 8, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "Infinite Jest", "author": "David Foster Wallace", "notes": "", "rating": 8, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "Zen and the Art of Motorcycle Maintenance: An Inquiry into Values", "author": "Robert M. Pirsig", "notes": "", "rating": 8, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "Siddhartha", "author": "Hermann Hesse", "notes": "", "rating": 8, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "On the Road", "author": "Jack Kerouac", "notes": "", "rating": 8, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "One Hundred Years of Solitude", "author": "Gabriel García Márquez", "notes": "", "rating": 8, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "The Alchemist", "author": "Paulo Coelho", "notes": "", "rating": 8, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "Demon Copperhead", "author": "Barbara Kingsolver", "notes": "", "rating": 8, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "Lake Success", "author": "Gary Shteyngart", "notes": "", "rating": 8, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "1Q84", "author": "Haruki Murakami", "notes": "", "rating": 7, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "Invisible Cities", "author": "Italo Calvino", "notes": "", "rating": 7, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "House of Leaves", "author": "Mark Z. Danielewski", "notes": "", "rating": 7, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "The Corrections", "author": "Jonathan Franzen", "notes": "", "rating": 7, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "The Surrender Experiment", "author": "Michael A Singer", "notes": "A clear eyed, simple", "rating": 7, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 1}},
-    {"title": "Super Sad True Love Story", "author": "Gary Shteyngart", "notes": "From Hannah slime", "rating": 7, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "Zen Mind Beginners Mind", "author": "Shunryu Suzuki", "notes": "", "rating": 7, "dims": {"expansion": 1, "pull": 1, "afterglow": 0, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "The Dharma Bums", "author": "Jack Kerouac", "notes": "", "rating": 7, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "The Essential Rumi", "author": "Coleman Barks, Jelaluddin Rumi", "notes": "", "rating": 7, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "The Disposessed", "author": "Ursula K. Le Guin", "notes": "", "rating": 6, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "jpod", "author": "Douglas Coupland", "notes": "boots fave", "rating": 6, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "Neuromancer", "author": "William gibson", "notes": "Gary shtygart", "rating": 6, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "The Teachings of Don Juan: A Yaqui Way of Knowledge", "author": "Carlos Castaneda", "notes": "Gonzo Anthropology and Herbal Shamanism. GREAT first person anthro. Weak after the fact structural analysis.", "rating": 6, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "The Overstory", "author": "Richard Powers", "notes": "", "rating": 6, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "Sastun: My Apprenticeship with a Maya Healer", "author": "Rosita Arvigo", "notes": "", "rating": 6, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "Stories of Your Life and Others", "author": "Ted Chiang", "notes": "", "rating": 6, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "The Ellimist Chronicles", "author": "K. A. Applegate", "notes": "", "rating": 6, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "The World According to Garp", "author": "John Irving", "notes": "", "rating": 6, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "Braiding Sweetgrass", "author": "Robin Wall Kimmerer", "notes": "", "rating": 6, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 0, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "The Trumpet of the Swan", "author": "E. B. White", "notes": "", "rating": 6, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 0, "rereadability": 1}},
-    {"title": "The Name of the Wind", "author": "Patrick Rothfuss", "notes": "boots fave fantasy", "rating": 5, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "Greenwood", "author": "Michael Christie", "notes": "from Boots, Van Isle is the last wild place on earth", "rating": 5, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "Stop-Time", "author": "Frank Conroy", "notes": "from DFW", "rating": 5, "dims": {"expansion": 0, "pull": 1, "afterglow": 0, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "Nexus, Crux, Apex", "author": "Ramez Naam", "notes": "Nexus Trilogy Part 1, SU Chair - Transhumanism, posthumanism. this one has all the best parts of the last two and contains all the important inspiring elements essentially.", "rating": 5, "dims": {"expansion": 1, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "Autobiography of a Yogi", "author": "Paramahansa Yogananda", "notes": "Re: Mickey Singer", "rating": 5, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "Love in the Time of Cholera", "author": "Gabriel García Márquez", "notes": "Very Hannah Contextualized. Either I want the story not to be or I want it to be. I can't tell if the whole thing is torture or not.", "rating": 5, "dims": {"expansion": 0, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "House of Spirits", "author": "Isabel Allende", "notes": "Whispering mysteries", "rating": 5, "dims": {"expansion": 0, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "Ministry of The Future", "author": "Kim Stanley Robinson", "notes": "", "rating": 5, "dims": {"expansion": 1, "pull": 1, "afterglow": 0, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "Strong Towns", "author": "Charles L. Marohn Jr.", "notes": "", "rating": 5, "dims": {"expansion": 1, "pull": 1, "afterglow": 0, "immersion": 0, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "The ONE Thing", "author": "Gary Keller", "notes": "FOCUS NOTES", "rating": 5, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 1, "quality": 1, "rereadability": 1}},
-    {"title": "Atomic Habits", "author": "James Clear", "notes": "For Maximum Gary", "rating": 5, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 0, "evocative": 0, "quality": 1, "rereadability": 1}},
-    {"title": "The Wayfinders", "author": "Wayde Davis", "notes": "Why ancient wisdom matters in the modern world", "rating": 5, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 1}},
-    {"title": "The Hobbit", "author": "J.R.R. Tolkien", "notes": "", "rating": 5, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 1}},
-    {"title": "Our Country Friends", "author": "Gary Shteyngart", "notes": "", "rating": 5, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 0, "rereadability": 0}},
-    {"title": "If on a winter's night a traveler", "author": "Italo Calvino", "notes": "About Reading", "rating": 4, "dims": {"expansion": 0, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "Little, Big", "author": "John Crowley", "notes": "boots' parallel universes", "rating": 4, "dims": {"expansion": 0, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "A Psalm for the Wild-Built", "author": "Becky Chambers", "notes": "from Jasmine (trellis)", "rating": 4, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "The Wild Trees", "author": "Richard Preston", "notes": "Inspired by the tactic of the biographer to get up into the trees, bushwack, get dirty and desperate, to get his family into trees also. A whole host of tree investigation.", "rating": 4, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "Strong Motion", "author": "Jonathan Franzen", "notes": "Lovers tied up in each other's moves and traumas", "rating": 4, "dims": {"expansion": 0, "pull": 0, "afterglow": 1, "immersion": 1, "evocative": 1, "quality": 0, "rereadability": 0}},
-    {"title": "Project Hail Mary", "author": "Andy Weir", "notes": "Scifi. Adventure. Bobama", "rating": 4, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "3 Body Problem", "author": "Liu Cixin", "notes": "", "rating": 4, "dims": {"expansion": 1, "pull": 1, "afterglow": 0, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "How to Win Friends and Influence People", "author": "Dale Carnegie", "notes": "", "rating": 4, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 0, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "Dungeon Crawler Carl", "author": "Matt Dinniman", "notes": "", "rating": 4, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "The Nutmeg’s Curse", "author": "Amitav Ghosh", "notes": "", "rating": 4, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "Children of Time", "author": "Adrian Tchaikovsky", "notes": "", "rating": 4, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "The Fifth Season", "author": "N.K. Jemisin", "notes": "", "rating": 4, "dims": {"expansion": 0, "pull": 1, "afterglow": 1, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "The Culture Code: The Secrets of Highly Successful Groups", "author": "Daniel Coyle", "notes": "from kuy", "rating": 4, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 0, "quality": 1, "rereadability": 1}},
-    {"title": "Hero with a Thousand Faces", "author": "Joseph Campbell", "notes": "Ray Dalio Recommendation", "rating": 4, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 0, "quality": 1, "rereadability": 1}},
-    {"title": "Beginning of Infinity", "author": "David Deutsch", "notes": "", "rating": 4, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 0, "quality": 1, "rereadability": 1}},
-    {"title": "When Breath Becomes Air", "author": "Paul Kalanithi", "notes": "Autobiography", "rating": 3, "dims": {"expansion": 0, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 1, "quality": 1, "rereadability": 0}},
-    {"title": "Drowned World", "author": "JG Ballard", "notes": "hypnotic distopía", "rating": 3, "dims": {"expansion": 0, "pull": 1, "afterglow": 0, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "In The Rainforest", "author": "Catherine Caufield", "notes": "stories of the economics, colonization and peoples of rainforests.", "rating": 3, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 0, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "Blindsight", "author": "Peter Watts", "notes": "", "rating": 3, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "Secret Life of Trees", "author": "Peter Wohlleben", "notes": "", "rating": 3, "dims": {"expansion": 1, "pull": 0, "afterglow": 1, "immersion": 0, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "All Systems Red", "author": "Martha Wells", "notes": "", "rating": 3, "dims": {"expansion": 0, "pull": 1, "afterglow": 0, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "The Untethered Soul", "author": "Michael A Singer", "notes": "", "rating": 3, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "Entangled Life", "author": "Merlin Sheldrake", "notes": "", "rating": 3, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 0, "quality": 1, "rereadability": 0}},
-    {"title": "Hey Nostradamus!", "author": "Douglas Coupland", "notes": "It's cute and stuff", "rating": 2, "dims": {"expansion": 0, "pull": 0, "afterglow": 0, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "Uncanny Valley: A Memoir", "author": "Anna Wiener", "notes": "Personal Look into life in the valley. A few interesting perspectives and insights into the valley. Into tech life as an outsider, as even an insider, with face pushed up against the glass, but still not really getting that recognition. In the inside track.", "rating": 2, "dims": {"expansion": 0, "pull": 0, "afterglow": 0, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "How Bad Are Bananas", "author": "Chris Goodall", "notes": "Practical Carbon Decision Making", "rating": 2, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "The Windup Girl", "author": "Paolo Bacigalupi", "notes": "", "rating": 2, "dims": {"expansion": 0, "pull": 0, "afterglow": 0, "immersion": 1, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "More from Less: The Surprising Story of How We Learned to Prosper Using Fewer Resources―and What Happens Next", "author": "Andrew McAfee", "notes": "", "rating": 2, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 0, "quality": 0, "rereadability": 0}},
-    {"title": "Work Rules!", "author": "Laszlo Bock", "notes": "", "rating": 2, "dims": {"expansion": 1, "pull": 0, "afterglow": 0, "immersion": 0, "evocative": 0, "quality": 0, "rereadability": 0}}
+    {
+      "title": "Shantaram",
+      "author": "Gregory David Roberts",
+      "rating": 8,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Infinite Jest",
+      "author": "David Foster Wallace",
+      "rating": 8,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Zen and the Art of Motorcycle Maintenance: An Inquiry into Values",
+      "author": "Robert M. Pirsig",
+      "rating": 8,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Siddhartha",
+      "author": "Hermann Hesse",
+      "rating": 8,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "On the Road",
+      "author": "Jack Kerouac",
+      "rating": 8,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel García Márquez",
+      "rating": 8,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "rating": 8,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Demon Copperhead",
+      "author": "Barbara Kingsolver",
+      "rating": 8,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Lake Success",
+      "author": "Gary Shteyngart",
+      "rating": 8,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "1Q84",
+      "author": "Haruki Murakami",
+      "rating": 7,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Invisible Cities",
+      "author": "Italo Calvino",
+      "rating": 7,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "House of Leaves",
+      "author": "Mark Z. Danielewski",
+      "rating": 7,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Corrections",
+      "author": "Jonathan Franzen",
+      "rating": 7,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Surrender Experiment",
+      "author": "Michael A Singer",
+      "rating": 7,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Super Sad True Love Story",
+      "author": "Gary Shteyngart",
+      "rating": 7,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Zen Mind Beginners Mind",
+      "author": "Shunryu Suzuki",
+      "rating": 7,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "The Dharma Bums",
+      "author": "Jack Kerouac",
+      "rating": 7,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "The Essential Rumi",
+      "author": "Coleman Barks, Jelaluddin Rumi",
+      "rating": 7,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "The Disposessed",
+      "author": "Ursula K. Le Guin",
+      "rating": 6,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "jpod",
+      "author": "Douglas Coupland",
+      "rating": 6,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Neuromancer",
+      "author": "William gibson",
+      "rating": 6,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Teachings of Don Juan: A Yaqui Way of Knowledge",
+      "author": "Carlos Castaneda",
+      "rating": 6,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Overstory",
+      "author": "Richard Powers",
+      "rating": 6,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Sastun: My Apprenticeship with a Maya Healer",
+      "author": "Rosita Arvigo",
+      "rating": 6,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Stories of Your Life and Others",
+      "author": "Ted Chiang",
+      "rating": 6,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Ellimist Chronicles",
+      "author": "K. A. Applegate",
+      "rating": 6,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The World According to Garp",
+      "author": "John Irving",
+      "rating": 6,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Braiding Sweetgrass",
+      "author": "Robin Wall Kimmerer",
+      "rating": 6,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 0,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "The Trumpet of the Swan",
+      "author": "E. B. White",
+      "rating": 6,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 0,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "The Name of the Wind",
+      "author": "Patrick Rothfuss",
+      "rating": 5,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Greenwood",
+      "author": "Michael Christie",
+      "rating": 5,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Stop-Time",
+      "author": "Frank Conroy",
+      "rating": 5,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Nexus, Crux, Apex",
+      "author": "Ramez Naam",
+      "rating": 5,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi",
+      "author": "Paramahansa Yogananda",
+      "rating": 5,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Love in the Time of Cholera",
+      "author": "Gabriel García Márquez",
+      "rating": 5,
+      "dims": {
+        "expansion": 0,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "House of Spirits",
+      "author": "Isabel Allende",
+      "rating": 5,
+      "dims": {
+        "expansion": 0,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Ministry of The Future",
+      "author": "Kim Stanley Robinson",
+      "rating": 5,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Strong Towns",
+      "author": "Charles L. Marohn Jr.",
+      "rating": 5,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The ONE Thing",
+      "author": "Gary Keller",
+      "rating": 5,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "rating": 5,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "The Wayfinders",
+      "author": "Wayde Davis",
+      "rating": 5,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "rating": 5,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Our Country Friends",
+      "author": "Gary Shteyngart",
+      "rating": 5,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "If on a winter's night a traveler",
+      "author": "Italo Calvino",
+      "rating": 4,
+      "dims": {
+        "expansion": 0,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Little, Big",
+      "author": "John Crowley",
+      "rating": 4,
+      "dims": {
+        "expansion": 0,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "A Psalm for the Wild-Built",
+      "author": "Becky Chambers",
+      "rating": 4,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Wild Trees",
+      "author": "Richard Preston",
+      "rating": 4,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Strong Motion",
+      "author": "Jonathan Franzen",
+      "rating": 4,
+      "dims": {
+        "expansion": 0,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 1,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Project Hail Mary",
+      "author": "Andy Weir",
+      "rating": 4,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "3 Body Problem",
+      "author": "Liu Cixin",
+      "rating": 4,
+      "dims": {
+        "expansion": 1,
+        "pull": 1,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "rating": 4,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Dungeon Crawler Carl",
+      "author": "Matt Dinniman",
+      "rating": 4,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Nutmeg’s Curse",
+      "author": "Amitav Ghosh",
+      "rating": 4,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Children of Time",
+      "author": "Adrian Tchaikovsky",
+      "rating": 4,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Fifth Season",
+      "author": "N.K. Jemisin",
+      "rating": 4,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 1,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Culture Code: The Secrets of Highly Successful Groups",
+      "author": "Daniel Coyle",
+      "rating": 4,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Hero with a Thousand Faces",
+      "author": "Joseph Campbell",
+      "rating": 4,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "Beginning of Infinity",
+      "author": "David Deutsch",
+      "rating": 4,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 1
+      }
+    },
+    {
+      "title": "When Breath Becomes Air",
+      "author": "Paul Kalanithi",
+      "rating": 3,
+      "dims": {
+        "expansion": 0,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 1,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Drowned World",
+      "author": "JG Ballard",
+      "rating": 3,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "In The Rainforest",
+      "author": "Catherine Caufield",
+      "rating": 3,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Blindsight",
+      "author": "Peter Watts",
+      "rating": 3,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Secret Life of Trees",
+      "author": "Peter Wohlleben",
+      "rating": 3,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 1,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "All Systems Red",
+      "author": "Martha Wells",
+      "rating": 3,
+      "dims": {
+        "expansion": 0,
+        "pull": 1,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Untethered Soul",
+      "author": "Michael A Singer",
+      "rating": 3,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Entangled Life",
+      "author": "Merlin Sheldrake",
+      "rating": 3,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 1,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Hey Nostradamus!",
+      "author": "Douglas Coupland",
+      "rating": 2,
+      "dims": {
+        "expansion": 0,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Uncanny Valley: A Memoir",
+      "author": "Anna Wiener",
+      "rating": 2,
+      "dims": {
+        "expansion": 0,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "How Bad Are Bananas",
+      "author": "Chris Goodall",
+      "rating": 2,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "The Windup Girl",
+      "author": "Paolo Bacigalupi",
+      "rating": 2,
+      "dims": {
+        "expansion": 0,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 1,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "More from Less: The Surprising Story of How We Learned to Prosper Using Fewer Resources―and What Happens Next",
+      "author": "Andrew McAfee",
+      "rating": 2,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    },
+    {
+      "title": "Work Rules!",
+      "author": "Laszlo Bock",
+      "rating": 2,
+      "dims": {
+        "expansion": 1,
+        "pull": 0,
+        "afterglow": 0,
+        "immersion": 0,
+        "evocative": 0,
+        "quality": 0,
+        "rereadability": 0
+      }
+    }
   ]
 }

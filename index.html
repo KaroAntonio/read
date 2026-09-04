@@ -255,7 +255,6 @@
   #tooltip .t-title{font-weight:700;margin-bottom:2px;}
   #tooltip .t-author{color:#c3c2b7;margin-bottom:6px;}
   #tooltip .t-dims{color:#e1e0d9;}
-  #tooltip .t-notes{margin-top:6px;color:#c3c2b7;font-style:italic;}
 
   /* ---------- Table view ---------- */
   #table-view{display:none;}
@@ -439,7 +438,6 @@ async function main(){
       <div class="t-title">${b.title}</div>
       <div class="t-author">${b.author}</div>
       <div class="t-dims">${metDims || '—'} &nbsp;·&nbsp; ${b.rating}/8</div>
-      ${b.notes ? `<div class="t-notes">${b.notes}</div>` : ''}
     `;
     tip.classList.add('show');
     moveTooltip(e);
